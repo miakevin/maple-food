@@ -24,7 +24,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Company | Maple Food International Inc.</title>
+	<title>Services | Maple Food International Inc.</title>
 
 </head>
 
@@ -57,9 +57,9 @@
 
 						<ul>
 							<li><a href="index.html"><div>Home</div></a></li>
-							<li class="current"><a href="company.html"><div>Company</div></a></li>
+							<li><a href="company.html"><div>Company</div></a></li>
 							<li><a href="products.html"><div>Products</div></a></li>
-							<li><a href="services.html"><div>Services</div></a></li>
+							<li class="current"><a href="services.html"><div>Services</div></a></li>
 							<li><a href="contact.html"><div>Contact</div></a></li>
 						</ul>
 
@@ -80,8 +80,8 @@
 						<div class="swiper-slide dark" style="background-image: url('images/sample-1.jpg');">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">ABOUT US</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Everything you need to know about our Company</p>
+									<h2 data-caption-animate="fadeInUp">OUR SERVICES</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">We offer professional services</p>
 								</div>
 							</div>
 						</div>
@@ -100,33 +100,52 @@
 
 				<div class="container clearfix">
 
-					<div class="col_one_third ">
+					<div id="side-navigation">
 
-						<div class="heading-block fancy-title nobottomborder title-bottom-border">
-							<h4>What we <span>Do</span>.</h4>
+						<div class="col_one_third nobottommargin">
+
+							<ul class="sidenav">
+								<li class="ui-tabs-active"><a href="#snav-content1">Analysis<i class="icon-chevron-right"></i></a></li>
+								<li><a href="#snav-content2">Consulting<i class="icon-chevron-right"></i></a></li>
+								<li><a href="#snav-content3">Cooperations<i class="icon-chevron-right"></i></a></li>
+							</ul>
+
 						</div>
 
-						<p>Maple Food International Inc. was established in 1996, with the following market objectives: production, formulation, mixing and sale of premixes and other products for use in the feed, agro alimentary and feed premix industry. Moreover it does formation activities on the correct principles of animal nutrition oriented to the final consumer.</p>
+						<div class="col_two_third col_last nobottommargin">
 
-					</div>
+							<div id="snav-content1">
+								<div class="heading-block">
+									<h3>Analysis</h3>
+									<!-- <span>We support multiple Devices &amp; Layouts.</span> -->
+								</div>
+								<p>Sample analysis by specialized laboratories.</p>
+								<!-- <p>Mycosal’s is synergistic combination of Alluminum Silicate and other silicates, organic acid, their salts and surfactants Mycosal’s action mechanism is to adsorb and keep tied mycotoxins in the gastrointestinal tract so they can be excreted in the feces.</p>
+								<p>The toxicity is so reduced or eliminated , improving nutrients absorption Mycosal support is a combination of positive and negative electric charges.
+								In this way is possible to adsorb a wide range of mycotoxins because they can be positive or negative electric charged.</p> -->
+							</div>
 
-					<div class="col_one_third">
+							<div id="snav-content2">
+								<div class="heading-block">
+									<h3>Consulting</h3>
+									<!-- <span>We support multiple Devices &amp; Layouts.</span> -->
+								</div>
+								<p>Applied technical consulting on modalities of diet formulation for various animal breeding species and for pet animals (Pet Food).</p>
+								<p>Scientific technical consulting regarding the correct use of Eurofeed products.</p>
+								<!-- <p>It’s particularly indicated for pet food.</p> -->
+							</div>
 
-						<div class="heading-block fancy-title nobottomborder title-bottom-border">
-							<h4>Our <span>Mission</span>.</h4>
+							<div id="snav-content3">
+								<div class="heading-block">
+									<h3>Cooperations</h3>
+									<!-- <span>We support multiple Devices &amp; Layouts.</span> -->
+								</div>
+								<p>Possibility to cooperate regarding formulation and realization of experimental projects aimed at proving and validating quality of products made by Eurofeed Technologies spa.</p>
+								<!-- <p>Malnutrition: the cow doesn’t ingest food in right quantities because of elevated summer temperature. Primary ketosis: the cow assumes ketogenic food (ex. Some bad insulated).</p> -->
+								<!-- <p>Spontaneous primary ketosis: the cowseems to be correctly rationed, but in reality there is a lack of balance between glucogenetic and lipogenetic substance.</p> -->
+							</div>
+
 						</div>
-
-						<p>Maple Food International Inc. designs and builds a series of industrial plants for production of a large range of additives, from Technological Additives to Nutritional Additives, Sensory Additives, Complementary Feeds and Products for Farm Animals that are used in the zootechnical industry both in Italy and abroad.</p>
-
-					</div>
-
-					<div class="col_one_third col_last">
-
-						<div class="heading-block fancy-title nobottomborder title-bottom-border">
-							<h4>Why choose <span>Us</span>.</h4>
-						</div>
-
-						<p>The Advantages, deriving from the experience of the highly qualified staff and the always up-to-date production and analysis technologies thanks the cooperation with outside laboratories and a watchful eye on product innovation and production process, are the characterizing features that allow Maple Food International Inc. to work in the global market offering</p>
 
 					</div>
 
@@ -193,6 +212,10 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
-
+	<script>
+	$(function() {
+		$( "#side-navigation" ).tabs({ show: { effect: "fade", duration: 400 } });
+	});
+</script>
 </body>
 </html>

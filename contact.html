@@ -24,7 +24,7 @@
 
 	<!-- Document Title
 	============================================= -->
-	<title>Company | Maple Food International Inc.</title>
+	<title>Contact | Maple Food International Inc.</title>
 
 </head>
 
@@ -48,7 +48,7 @@
 					============================================= -->
 					<div id="logo">
 						<a href="index.html" class="standard-logo" data-dark-logo="images/logo-dark.png"><img src="images/logo.png" alt="Canvas Logo"></a>
-						<!-- <a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a> -->
+						<a href="index.html" class="retina-logo" data-dark-logo="images/logo-dark@2x.png"><img src="images/logo@2x.png" alt="Canvas Logo"></a>
 					</div><!-- #logo end -->
 
 					<!-- Primary Navigation
@@ -57,10 +57,10 @@
 
 						<ul>
 							<li><a href="index.html"><div>Home</div></a></li>
-							<li class="current"><a href="company.html"><div>Company</div></a></li>
+							<li><a href="company.html"><div>Company</div></a></li>
 							<li><a href="products.html"><div>Products</div></a></li>
 							<li><a href="services.html"><div>Services</div></a></li>
-							<li><a href="contact.html"><div>Contact</div></a></li>
+							<li class="current"><a href="contact.html"><div>Contact</div></a></li>
 						</ul>
 
 					</nav><!-- #primary-menu end -->
@@ -80,8 +80,8 @@
 						<div class="swiper-slide dark" style="background-image: url('images/sample-1.jpg');">
 							<div class="container clearfix">
 								<div class="slider-caption slider-caption-center">
-									<h2 data-caption-animate="fadeInUp">ABOUT US</h2>
-									<p data-caption-animate="fadeInUp" data-caption-delay="200">Everything you need to know about our Company</p>
+									<h2 data-caption-animate="fadeInUp">CONTACT US</h2>
+									<p data-caption-animate="fadeInUp" data-caption-delay="200">Do not hesitate to contact us.</p>
 								</div>
 							</div>
 						</div>
@@ -96,41 +96,20 @@
 		============================================= -->
 		<section id="content">
 
-			<div class="content-wrap">
+			<div class="content-wrap nobottompadding">
 
-				<div class="container clearfix">
-
-					<div class="col_one_third ">
-
-						<div class="heading-block fancy-title nobottomborder title-bottom-border">
-							<h4>What we <span>Do</span>.</h4>
-						</div>
-
-						<p>Maple Food International Inc. was established in 1996, with the following market objectives: production, formulation, mixing and sale of premixes and other products for use in the feed, agro alimentary and feed premix industry. Moreover it does formation activities on the correct principles of animal nutrition oriented to the final consumer.</p>
-
+				<div class="promo promo-full promo-border header-stick nobottommargin">
+					<div class="container clearfix">
+						<h3>Call us today at <span>+1-604-792-4783</span> or Email us at <span>info@maplefood.com</span></h3>
+						<span>We strive to provide Our Customers with Top Notch Support to make their Experience Wonderful</span>
+						<a href="#" class="button button-reveal button-xlarge button-rounded tright"><i class="icon-angle-right"></i><span>Browse Now</span></a>
 					</div>
-
-					<div class="col_one_third">
-
-						<div class="heading-block fancy-title nobottomborder title-bottom-border">
-							<h4>Our <span>Mission</span>.</h4>
-						</div>
-
-						<p>Maple Food International Inc. designs and builds a series of industrial plants for production of a large range of additives, from Technological Additives to Nutritional Additives, Sensory Additives, Complementary Feeds and Products for Farm Animals that are used in the zootechnical industry both in Italy and abroad.</p>
-
-					</div>
-
-					<div class="col_one_third col_last">
-
-						<div class="heading-block fancy-title nobottomborder title-bottom-border">
-							<h4>Why choose <span>Us</span>.</h4>
-						</div>
-
-						<p>The Advantages, deriving from the experience of the highly qualified staff and the always up-to-date production and analysis technologies thanks the cooperation with outside laboratories and a watchful eye on product innovation and production process, are the characterizing features that allow Maple Food International Inc. to work in the global market offering</p>
-
-					</div>
-
 				</div>
+
+				<!-- <div class="container clearfix"> -->
+					<div id="google-map5" style="height: 400px;" class="gmap"></div>
+
+				<!-- </div> -->
 
 			</div>
 
@@ -149,7 +128,7 @@
 				<div class="container clearfix">
 
 					<div class="col_half">
-						Copyrights &copy; 2016 All Rights Reserved by Maple Food International Inc.<br>
+						Copyrights &copy; 2014 All Rights Reserved by Maple Food International Inc.<br>
 						<div class="copyright-links"><a href="#">Terms of Use</a> / <a href="#">Privacy Policy</a></div>
 					</div>
 
@@ -193,6 +172,35 @@
 	<!-- Footer Scripts
 	============================================= -->
 	<script type="text/javascript" src="js/functions.js"></script>
+
+	<script type="text/javascript" src="//maps.google.com/maps/api/js"></script>
+	<script type="text/javascript" src="js/jquery.gmap.js"></script>
+
+	<script type="text/javascript">
+		$('#google-map5').gMap({
+			//  address: 'Canada',
+			 latitude: 49.169918,
+			 longitude: -123.024238,
+			 maptype: 'ROADMAP',
+			 zoom: 13,
+			 markers: [
+				{
+					latitude: 49.169918,
+          longitude: -123.024238,
+					html: "Maple Food International Inc."
+				}
+			 ],
+			 doubleclickzoom: false,
+			 controls: {
+				 panControl: true,
+				 zoomControl: true,
+				 mapTypeControl: false,
+				 scaleControl: false,
+				 streetViewControl: false,
+				 overviewMapControl: false
+			}
+		});
+	</script>
 
 </body>
 </html>
